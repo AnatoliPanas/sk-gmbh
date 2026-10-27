@@ -1,0 +1,40 @@
+
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout title="Impressum | SK GMBH">
+  <Header />
+
+  <main class="legal-page container">
+    <p class="section-eyebrow">RECHTLICHE INFORMATIONEN</p>
+    <h1>Impressum</h1>
+
+    <p>
+      Diese Seite muss vor der Veröffentlichung mit den
+      vollständigen gesetzlichen Angaben der SK GMBH
+      ergänzt werden.
+    </p>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>[Vollständiger Firmenname und Rechtsform]</p>
+    <p>[Anschrift des Unternehmens]</p>
+
+    <h2>Vertreten durch</h2>
+    <p>[Geschäftsführung]</p>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: [geschäftliche E-Mail-Adresse]</p>
+    <p>Telefon: [geschäftliche Telefonnummer]</p>
+
+    <h2>Registereintrag</h2>
+    <p>[Registergericht und Handelsregisternummer, sofern vorhanden]</p>
+
+    <h2>Umsatzsteuer</h2>
+    <p>[Umsatzsteuer-Identifikationsnummer, sofern vorhanden]</p>
+  </main>
+
+  <Footer />
+</MainLayout>

@@ -1,0 +1,26 @@
+
+---
+import "../styles/global.css";
+
+const {
+  title = "SK GMBH | Bau und Renovierung",
+  description = "Ihr zuverlässiger Partner für Bauarbeiten, Sanierung und Modernisierung."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#20262b" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script>
+      import "../scripts/main.js";
+    </script>
+  </body>
+</html>
